@@ -17,7 +17,7 @@ response_desc_volumes = client.describe_volumes(
 )
 
 volume_ids = []
-# Getting the specific volume id's from the instances defined in line 14
+# Getting the specific volume id's from the instances defined in line 13
 for volumes in response_desc_volumes['Volumes']:
     volume_ids.append(volumes['VolumeId'])
 
